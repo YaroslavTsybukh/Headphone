@@ -6,18 +6,20 @@ const hamburger = document.querySelector('#hamburger');
 menuToggle.addEventListener('click',function(){
     if(menuToggle){
         menuToggle.display = "none"
+        menuToggle.classList.toggle('menu-icon-active');
+        hamburger.classList.toggle('hamburger--active')
     }else{
-        menuToggle.display = "none"
-    }
-    menuToggle.classList.toggle('menu-icon-active');
-    hamburger.classList.toggle('hamburger--active');//Метод toggle объекта classList чередует заданный CSS класс элемента: добавляет класс, если его нет и удаляет, если есть. 
+        menuToggle.display = "block"
+        menuToggle.classList.toggle('menu-icon-active');
+        hamburger.classList.toggle('hamburger--active');
+    };//Метод toggle объекта classList чередует заданный CSS класс элемента: добавляет класс, если его нет и удаляет, если есть. 
 })
 
 /*Tabs*/
 
 let tab = document.querySelectorAll('.info__header-tab'),
-        info = document.querySelector('.info__header'),
-        tabContent = document.querySelectorAll('.info-tabcontent');
+    info = document.querySelector('.info__header'),
+    tabContent = document.querySelectorAll('.info-tabcontent');
 
     function hideTabContent(a) {
         for (let i = a; i < tabContent.length; i++) {
@@ -25,7 +27,6 @@ let tab = document.querySelectorAll('.info__header-tab'),
             tabContent[i].classList.add('hide');
         }
     }
-
     hideTabContent(1);
 
     function showTabContent(b) {
