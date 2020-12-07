@@ -42,7 +42,7 @@ h1{
 }
 .order:hover,.offer__button:hover,.colo:hover{
     background-color:#f8a968;
-    transition: 2s ease;
+    transition: 2s;
 }
 
 .fa-check:hover{
@@ -243,8 +243,7 @@ letter-spacing: 1.44px;
     height: 3px;
     background-color: #c78030;
     margin-top: 4px;
-    -webkit-transition: 0.4s;
-            transition: 0.4s;
+    transition: 0.4s;     
   }
   .info__header-tab:hover:after {
     width: 60%;
@@ -304,9 +303,6 @@ letter-spacing: 1.44px;
     font-size: 16px;
     font-weight: 500;
   }
-  .info-paragraph{
-      font-weight: 700;
-  }
   .input{
     width: 100%;
     height: 68px;
@@ -343,9 +339,6 @@ letter-spacing: 1.44px;
     font-size: 12px;
     font-weight: 300;
   }
-  .social-network{
-      margin-top: 60px;
-  }
   .fa-instagram,.fa-youtube{
       color: white;
   }
@@ -359,6 +352,10 @@ letter-spacing: 1.44px;
   }
   .social-network_inst{
     float: right;
+    margin-top: 62px;
+  }
+  .fa-youtube{
+    margin-top: 94%;
   }
   .copyright{
       margin:17px 0px 0px 0px;
